@@ -1,3 +1,7 @@
+:root {
+  --bg-greenN: #45765f;
+}
+
 @font-face {
   font-family: "Sensation";
   src: url("../fonts/Sensation-Regular.ttf");
@@ -31,18 +35,19 @@ h5 {
 }
 
 .navbar {
-  background-color: #45765f;
-}
-.logo-empresa {
-  font-family: "Sensation-Bold", Arial, sans-serif;
+  background-color: var(--bg-greenN);
+  .logo-empresa {
+    font-family: "Sensation-Bold", Arial, sans-serif;
+  }
 }
 .section1 {
   background-color: #79ac93;
   span {
-    color: #FFC107;
+    color: #ffc107;
     display: block;
   }
-  img{
+  img {
     transform: rotate(5deg);
   }
 }
+
