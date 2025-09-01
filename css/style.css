@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Sensation";
+  src: url("../fonts/Sensation-Regular.ttf");
+  font-style: normal;
+  font-weight: 300;
+  font-size: medium;
+}
+@font-face {
+  font-family: "Sensation-Bold";
+  src: url("../fonts/Sansation-Bold.ttf");
+  font-style: bolder;
+  font-weight: bold;
+  font-size: medium;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sensation-Bold", Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #45765f;
+}
+.logo-empresa {
+  font-family: "Sensation-Bold", Arial, sans-serif;
+}
+.section1 {
+  background-color: #79ac93;
+  span {
+    color: #FFC107;
+    display: block;
+  }
+  img{
+    transform: rotate(5deg);
+  }
+}
