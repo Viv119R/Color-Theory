@@ -65,3 +65,7 @@ h5 {
   height: 350px;
   padding: 0;
 }
+
+.cont-color {
+  background-color: var(--bg-greenN);
+}
