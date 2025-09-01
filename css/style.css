@@ -51,12 +51,17 @@ h5 {
   }
 }
 
-.gal-card{
+.gal-card {
   width: 300px;
   height: 500px;
-  padding: 0 ;
-  img{
+  padding: 0;
+  img {
     height: 380px;
     object-fit: cover;
   }
+}
+.tDC-card {
+  width: 280px;
+  height: 350px;
+  padding: 0;
 }
