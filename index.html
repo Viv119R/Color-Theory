@@ -22,7 +22,7 @@
     <header>
       <nav class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand logo-empresa ms-5" href="#">
+          <a class="navbar-brand logo-empresa ms-5" href="index.html">
             <i class="bi bi-palette-fill"></i> ColorTheory</a
           >
           <button
@@ -43,13 +43,19 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Teoría</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Tipos</a>
+                <a class="nav-link" href="#teoria">Teoría</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Contactos</a>
+                <a class="nav-link" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="#tipos">Tipos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="#contactos"
+                  >Contactos</a
+                >
               </li>
             </ul>
           </div>
@@ -70,8 +76,10 @@
                 Descubre cómo los colores fluyen en nuestras emociones,
                 decisiones y perceción del mundo que nos rodea.
               </p>
-              <a href="#" type="button" class="btn btn-light">Aprender Más</a>
-              <a href="#" type="button" class="btn btn-outline-light"
+              <a href="#contactos" type="button" class="btn btn-light"
+                >Aprender Más</a
+              >
+              <a href="#galeria" type="button" class="btn btn-outline-light"
                 >Galeria</a
               >
             </div>
@@ -85,7 +93,7 @@
           </div>
         </article>
       </section>
-      <section class="container-fluid">
+      <section class="container-fluid" id="teoria">
         <h1 class="text-center text-success display-3">
           ¿Qué es la Teória del <br />
           Color?
@@ -155,7 +163,7 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid py-5 bg-light">
+      <section class="container-fluid py-5 bg-light" id="galeria">
         <div class="container my-3">
           <h1 class="text-center text-success display-3">Galería de Colores</h1>
           <p class="text-center">
@@ -252,7 +260,7 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid py-5">
+      <section class="container-fluid py-5" id="tipos">
         <div class="container my-3">
           <h1 class="text-center text-success display-3">Tipos de Colores</h1>
           <p class="text-center">
@@ -311,7 +319,7 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid py-5 cont-color">
+      <section class="container-fluid py-5 cont-color" id="contactos">
         <div class="container my-3">
           <h1 class="text-center text-white display-3">
             ¿Quieres aprender más?
@@ -378,7 +386,43 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="bg-dark-subtle py-3" data-bs-theme="dark">
+        <div class="container">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <div class="mb-3 mb-md-0">
+              <a
+                class="logo-empresa fs-3 link-light link-underline-opacity-0"
+                href="index.html"
+              >
+                <i class="bi bi-palette-fill"></i> ColorTheory</a
+              >
+            </div>
+            <div class="d-flex gap-3 justify-content-center mb-3 mb-md-0">
+              <a><i class="fs-4 text-white bi bi-facebook"></i></a>
+              <a><i class="fs-4 text-white bi bi-twitter-x"></i></a>
+              <a><i class="fs-4 text-white bi bi-instagram"></i></a>
+              <a><i class="fs-4 text-white bi bi-pinterest"></i></a>
+            </div>
+          </div>
+          <hr class="mx-auto my-2 border-secondary" />
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <div class="mb-3 mb-md-0">
+              <p class="fs-4 text-white"> &copy Todos los derechos reservados</p>
+            </div>
+            <div class="d-flex gap-3 justify-content-center mb-3 mb-md-0">
+              <a class="fs-5 link-underline-opacity-10 link-light">Politica de privacidad</a>
+              <a class="fs-5 link-underline-opacity-10 link-light">Términos de servicio</a>
+              <a class="fs-5 link-underline-opacity-10 link-light">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
