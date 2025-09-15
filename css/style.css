@@ -45,9 +45,99 @@ h5 {
   span {
     color: #ffc107;
     display: block;
+    animation: color 4s ease-in-out 1 alternate-reverse;
   }
   img {
     transform: rotate(5deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #ffd107;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  color: white;
+  border-radius: 50%;
+  background-color: #45765f;
+  margin-top: 20px;
+}
+.card:hover {
+  .circleColor {
+    animation: colorC 2s ease-in-out infinite;
+  }
+  .thermometer {
+    animation: calor 2s infinite alternate;
+  }
+  .contrast {
+    animation: contrast 2s infinite alternate;
+  }
+  .psico {
+    animation: psico 400ms ease-out infinite alternate;
+  }
+}
+
+@keyframes colorC {
+  0% {
+    color: #ff0766;
+  }
+  25% {
+    color: rgb(0, 26, 255);
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: rgb(255, 230, 0);
+  }
+  100% {
+    color: rgb(255, 3, 3);
+  }
+}
+
+@keyframes calor {
+  0% {
+    color: #2007ff;
+  }
+  100% {
+    color: rgb(255, 174, 0);
+  }
+}
+
+@keyframes contrast {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: rgb(0, 0, 0);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes psico {
+  from {
+    color: #ff0000;
+    transform: scale(0.5);
+  }
+  to {
+    color: #ff0000;
+    transform: scale(1.2);
   }
 }
 
@@ -55,6 +145,16 @@ h5 {
   width: 300px;
   height: 500px;
   padding: 0;
+  &:hover {
+    transform: scale(1.1);
+    img {
+      height: 450px;
+      object-fit: cover;
+    }
+    .card-text {
+      display: none;
+    }
+  }
   img {
     height: 380px;
     object-fit: cover;
@@ -64,6 +164,9 @@ h5 {
   width: 280px;
   height: 350px;
   padding: 0;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .cont-color {
