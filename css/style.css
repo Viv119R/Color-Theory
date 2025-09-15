@@ -45,11 +45,39 @@ h5 {
   span {
     color: #ffc107;
     display: block;
+    animation: color 4s ease-in-out 1 alternate-reverse;
   }
   img {
     transform: rotate(5deg);
   }
 }
+
+@keyframes color {
+  0% {
+    color: #ffd207;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #45765f;
+  margin-top: 20px;
+}
+
 
 .gal-card {
   width: 300px;
